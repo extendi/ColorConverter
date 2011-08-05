@@ -1,4 +1,3 @@
-
 static void HSL2RGB(float h, float s, float l, float* outR, float* outG, float* outB)
 {
 	float			temp1,
@@ -112,7 +111,7 @@ static void RGB2HSL(float r, float g, float b, float* outH, float* outS, float* 
   b2 = (v - b)/vm;
   
   if (r == v){
-    g = (g == m ? 5.0f + b2 : 1.0f - g2);
+    h = (g == m ? 5.0f + b2 : 1.0f - g2);
   }else if (g == v){
     h = (b == m ? 1.0f + r2 : 3.0 - b2);
   }else{
